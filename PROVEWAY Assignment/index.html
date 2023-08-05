@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Responsive Layout</title>
+</head>
+<body>
+  <main class="container">
+    <header class="centered">
+      <h1>Bundle & Save</h1>
+      <div class="line"></div>
+    </header>
+
+    <section class="box-container">
+      <article class="box">
+        <div class="box-content">
+          <div class="circle-checkbox">
+            <input type="checkbox" name="boxCheckbox" id="checkbox1">
+            <label for="checkbox1"></label>
+          </div>
+          <div>
+            <p class="pairs"><span>1</span> pair</p>
+            <p style="font-weight: 500;">DKK&nbsp;195.00</p>
+            <div class="hidden-dropdown" id="dropdown1pair"></div>
+          </div>
+          <div>
+            <p style="color: #007F61; font-weight: 600;visibility: hidden">Most Popular</p>
+            <p>50% off</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="box">
+        <div class="box-content">
+          <div class="circle-checkbox">
+            <input type="checkbox" name="boxCheckbox" id="checkbox2">
+            <label for="checkbox2"></label>
+          </div>
+          <div>
+            <p class="pairs"><span>2</span> pairs</p>
+            <p style="font-weight: 500;">DKK&nbsp;345.00</p>
+            <div class="hidden-dropdown" id="dropdown2pair">
+              <table>
+                <tr>
+                  <td>Size</td>
+                  <td>Color</td>
+                </tr>
+                <tr>
+                  <td>
+                    <select>
+                      <option value="size1">Size 1</option>
+                      <option value="size2">Size 2</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select>
+                      <option value="color1">Color 1</option>
+                      <option value="color2">Color 2</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <select>
+                      <option value="size1">Size 1</option>
+                      <option value="size2">Size 2</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select>
+                      <option value="color1">Color 1</option>
+                      <option value="color2">Color 2</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div>
+            <p style="color: #007F61; font-weight: 600;">Most Popular</p>
+            <p>40% off</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="box">
+        <div class="box-content">
+          <div class="circle-checkbox">
+            <input type="checkbox" name="boxCheckbox" id="checkbox3">
+            <label for="checkbox3"></label>
+          </div>
+          <div>
+            <p class="pairs"><span>3</span> pairs</p>
+            <p style="font-weight: 500;">DKK&nbsp;528.00</p>
+            <div class="hidden-dropdown" id="dropdown3pair">
+              <table>
+                <tr>
+                  <td>Size</td>
+                  <td>Color</td>
+                </tr>
+                <tr>
+                  <td>
+                    <select>
+                      <option value="size1">Size 1</option>
+                      <option value="size2">Size 2</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select>
+                      <option value="color1">Color</option>
+                      <option value="color2">Color</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <select>
+                      <option value="size1">S</option>
+                      <option value="size2">M</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select>
+                      <option value="color1">Color</option>
+                      <option value="color2">Color</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <select>
+                      <option value="size1">S</option>
+                      <option value="size2">M</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select>
+                      <option value="color1">Color</option>
+                      <option value="color2">Color</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div>
+            <p style="color: #007F61; font-weight: 600;visibility: hidden">Most Popular</p>
+            <p>60% off</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="shipping">
+      <p style="color: #007F61;">Free 2 Day Shipping</p>
+      <div class="total-price">
+        <p>Total:<span id="totalAmount">&nbsp;</span></p> DKK </p>
+       
+
+      </div>
+    </section>
+    <button class="button" style="background-color: #007F61;">+Add to Cart</button>
+    <section class="powered-by" style="font-weight: 300; font-size: 12px;">
+      <span class="copyright" >&#169;</span>
+      Powered by Pumper
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
