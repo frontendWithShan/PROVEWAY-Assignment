@@ -22,6 +22,7 @@
   });
 
   function showDropdown(checkbox) {
+    const dropdown1pair = document.getElementById('dropdown1pair');
     const dropdown2pair = document.getElementById('dropdown2pair');
     const dropdown3pair = document.getElementById('dropdown3pair');
 
@@ -29,6 +30,9 @@
       dropdown2pair.classList.toggle('hidden-dropdown', !checkbox.checked);
     } else if (checkbox.id === 'checkbox3') {
       dropdown3pair.classList.toggle('hidden-dropdown', !checkbox.checked);
+    }else if(checkbox.id === 'checkbox1'){
+      dropdown1pair.classList.toggle('hidden-dropdown', !checkbox.checked);
+
     }
   }
   checkboxes.forEach((checkbox) => {
@@ -51,6 +55,7 @@
     totalAmountElement.textContent = totalAmount.toFixed(2);
   }
   function hideDropdown(checkbox) {
+    const dropdown1pair = document.getElementById('dropdown1pair');
     const dropdown2pair = document.getElementById('dropdown2pair');
     const dropdown3pair = document.getElementById('dropdown3pair');
 
@@ -58,5 +63,8 @@
       dropdown2pair.classList.add('hidden-dropdown');
     } else if (checkbox.id === 'checkbox3') {
       dropdown3pair.classList.add('hidden-dropdown');
+    }else if(checkbox.id === 'checkbox1'){
+      dropdown1pair.classList.add('hidden-dropdown');
+
     }
   }
